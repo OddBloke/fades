@@ -377,7 +377,7 @@ create them, considering its major and minor version.
 This means that if run fades with a Python version and then run it again
 with a different Python version, it may need to create a new virtualenv.
 
-Let's see some examples. Let's say you run fades with ``python``, which
+Let's see some examples. Let's say you run fades with ``python3``, which
 is a symlink in your ``/usr/bin/`` to ``python3.4`` (running it directly
 by hand or because fades is installed to use that Python version).
 
@@ -385,7 +385,7 @@ If you have Python 3.4.2 installed in your system, and it's upgraded to
 Python 3.4.3, fades will keep reusing the already created virtualenvs, as
 only the micro version changed, not minor or major.
 
-But if Python 3.5 is installed in your system, and the default ``python``
+But if Python 3.5 is installed in your system, and the default ``python3``
 is pointed to this new one, fades will start creating all the
 virtualenvs again, with this new version.
 
